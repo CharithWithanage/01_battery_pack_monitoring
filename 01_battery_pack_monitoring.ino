@@ -3,14 +3,14 @@
 #include "src/VoltageSensor/VoltageSensor.h"
 #include "src/Relay/ActiveDriver.h"
 
-CurrentSensor chargerCurrent(CS_CURRENT_SENSOR_PIN);
-CurrentSensor loadCurrent(CS_VOLTAGE_SENSOR_PIN);
+CurrentSensor chargerCurrent(CS_CURRENT_SENSOR);
+CurrentSensor loadCurrent(CS_VOLTAGE_SENSOR);
 
-VoltageSensor chargerVoltage(LS_CURRENT_SENSOR_PIN);
-VoltageSensor batteryVoltage(LS_VOLTAGE_SENSOR_PIN);
+VoltageSensor chargerVoltage(LS_CURRENT_SENSOR);
+VoltageSensor batteryVoltage(LS_VOLTAGE_SENSOR);
 
-ActiveDriver chargingSideRelay(CS_RELAY_PIN);
-ActiveDriver loadSideRelay(LS_RELAY_PIN);
+ActiveDriver chargingSideRelay(CS_RELAY);
+ActiveDriver loadSideRelay(LS_RELAY);
 
 
 void setup()
